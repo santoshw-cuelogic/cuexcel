@@ -1,0 +1,186 @@
+<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= product.price %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %> | <%= link_to 'Export', generate_report_reports_path %><br/>
+
+
+|||||||||||||||||||||||<br/>
+
+<style>
+    html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+    }
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script>
+    var map;
+    function initialize() {
+        var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(20.42, 77.02)
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+<!--<div id="map-canvas"></div>-->
+
+|||||||||||||| <br/>
+
+<fb:login-button perms="email" onlogin="createFbSession();"></fb:login-button>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js">
+</script>
+
+<script>
+    FB.init({
+        appId:"1455431491436586",
+        cookie:true,
+        status:true,
+        xfbml:true
+    });
+
+    function createFbSession() {
+        FB.login(function(response) {
+            if (response.authResponse) {
+                var access_token =   FB.getAuthResponse()['accessToken'];
+                console.log('Access Token = '+ access_token);
+                FB.api('https://graph.facebook.com/v2.3/me/friends?access_token=CAACEdEose0cBANnzSKKLIzokjaZCTFKU5vlMGpU4EOwZAAZBgEn2SDuAcfPAqgKGuBEnARzMHzIhpQjAfjosvQj7MgyfSOGw2ZAZAvjlKndj0RLdVcgkl97IYj4kGNhja9Sl9PMHYZBEVSbSpca7SAeE1eRAQbLCHU0ZCtZAZAwHjdGuRbzAeLOwZBW5DJoKNuo2IZD&debug=all&format=json&method=get&pretty=0&suppress_http_code=1', function(response) {
+                    data = JSON.stringify(response); //User Data can be found here.
+                    console.log(data);
+                });
+            } else {
+                console.log('User cancelled login or did not fully authorize.');
+            }
+        }, {scope: ''});
+    }
+
+
+
+</script>
+
+
+||||||||||||||||||<br/>
+
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" content="660857220494-n6acb730sngh4jfelobk3in4rh55o037.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+<script>
+    function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log("Name: " + profile.getName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+    };
+</script>
+
+|||||||||||||||||<br/>
+
+<style>
+    #edmodo-logo {
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        right: 16px;
+        margin:0;
+    }
+    #vertical-divider {
+        position: relative;
+        width: 0px;
+        right: 7px;
+        display: inline-block;
+        border-left: 1px solid #2567a8;
+        border-right: 1px solid #4b8dce;
+        height:inherit;
+    }
+    #vertical-divider:after {
+        content: '.';
+        visibility: hidden;
+    }
+    #edmodo {
+        font-weight: 500;
+        font-family: "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+    button.login-edmodo-button {
+        line-height: 44px;
+        padding: 0 14px 0 28px;
+        border-radius: 2px;
+        cursor: pointer;
+        background-color: #3784d3;
+        box-shadow: 0 2px 0 #276bb0;
+        border:0;
+        height:38px;
+    }
+    button.login-edmodo-button:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #2d7bcc;
+    }
+    button.login-edmodo-button p {
+        color: white;
+        text-shadow: 0 1px 0 #555555;
+        font-size: 19px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        display: inline-block;
+        margin:0;
+    }
+</style>
+
+<button class="login-edmodo-button">
+  <img id="edmodo-logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/41205/edmodo-icon_1.png">
+  <div id="vertical-divider"></div>
+  <p>Log in with <span id="edmodo">Edmodo</span></p>
+</button>
+<script>
+$(document).ready(function(){
+    $(".login-edmodo-button").click(function(){
+      window.location.href = "https://api.edmodo.com/oauth/authorize";
+    });
+});
+</script>
+<br/>|||||||||||||||||<br/>
+
+
+

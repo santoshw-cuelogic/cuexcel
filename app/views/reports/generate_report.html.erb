@@ -1,0 +1,4 @@
+<%= form_tag '/reports/product_info_report',:method => 'post' do %>
+  <%= text_field_tag 'price'%>
+  <%= submit_tag 'Generate Report'%>
+<% end %>

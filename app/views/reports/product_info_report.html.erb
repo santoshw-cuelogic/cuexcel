@@ -1,0 +1,43 @@
+<% xls_content("app/views/reports/product_info_report.xls.erb",
+               { worksheet_name: "product",
+                 column_width: [170, 170, 140],
+                 titles: ["Product Details Report"],
+                 header: @product_details[0],
+                 data: @product_details[1],
+                 column_attr: { caption: 'Testing', width: '30' } })
+%>
+
+
+
+
+
+
+
+
+<%= link_to url_for(request.params.merge( format: :xls)), { method: :post, target: "_blank"} do %>
+<%= image_tag('xls_icon.png', title: 'Download') %>
+
+<% end %>
+
+<table>
+  <% unless @product_details.blank? %>
+      <thead>
+      <tr>
+        <% @product_details[0].each do |header| %>
+          <th><%= header%></th>
+        <% end %>
+      </tr>
+      </thead>
+      <tbody>
+      <% @product_details[1].each do |leave_detail| %>
+          <tr>
+            <td><%= leave_detail[0]%></td>
+            <td><%= leave_detail[1]%></td>
+            <td><%= leave_detail[2]%></td>
+          </tr>
+      <% end %>
+      </tbody>
+  <%else%>
+      Data Not Found
+  <% end %>
+</table>
