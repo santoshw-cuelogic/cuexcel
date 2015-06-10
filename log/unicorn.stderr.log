@@ -1,0 +1,35 @@
+I, [2015-06-10T20:15:25.096274 #28541]  INFO -- : Refreshing Gem list
+/home/pranavn/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/http/mime_type.rb:166: warning: already initialized constant Mime::XLS
+/home/pranavn/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/http/mime_type.rb:166: warning: previous definition of XLS was here
+I, [2015-06-10T20:15:31.041788 #28541]  INFO -- : listening on addr=/home/pranavn/cuexcel/tmp/sockets/unicorn.sock fd=11
+I, [2015-06-10T20:15:31.071946 #28541]  INFO -- : listening on addr=0.0.0.0:3000 fd=12
+I, [2015-06-10T20:15:31.605815 #28541]  INFO -- : master process ready
+I, [2015-06-10T20:15:31.634623 #28554]  INFO -- : worker=2 ready
+I, [2015-06-10T20:15:31.634623 #28548]  INFO -- : worker=0 ready
+I, [2015-06-10T20:15:31.634623 #28551]  INFO -- : worker=1 ready
+I, [2015-06-10T20:15:31.635753 #28557]  INFO -- : worker=3 ready
+I, [2015-06-10T20:15:31.635778 #28560]  INFO -- : worker=4 ready
+I, [2015-06-10T20:17:48.796697 #28670]  INFO -- : Refreshing Gem list
+/home/pranavn/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/http/mime_type.rb:166: warning: already initialized constant Mime::XLS
+/home/pranavn/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/http/mime_type.rb:166: warning: previous definition of XLS was here
+I, [2015-06-10T20:17:52.796186 #28670]  INFO -- : unlinking existing socket=/home/pranavn/cuexcel/tmp/sockets/unicorn.sock
+I, [2015-06-10T20:17:52.821971 #28670]  INFO -- : listening on addr=/home/pranavn/cuexcel/tmp/sockets/unicorn.sock fd=11
+I, [2015-06-10T20:17:52.822249 #28670]  INFO -- : listening on addr=0.0.0.0:3000 fd=12
+I, [2015-06-10T20:17:53.350958 #28670]  INFO -- : master process ready
+I, [2015-06-10T20:17:53.364936 #28681]  INFO -- : worker=2 ready
+I, [2015-06-10T20:17:53.364936 #28675]  INFO -- : worker=0 ready
+I, [2015-06-10T20:17:53.364936 #28678]  INFO -- : worker=1 ready
+I, [2015-06-10T20:17:53.366769 #28687]  INFO -- : worker=4 ready
+I, [2015-06-10T20:17:53.366768 #28684]  INFO -- : worker=3 ready
+I, [2015-06-10T20:19:23.475847 #28762]  INFO -- : Refreshing Gem list
+/home/pranavn/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/http/mime_type.rb:166: warning: already initialized constant Mime::XLS
+/home/pranavn/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.0.0/lib/action_dispatch/http/mime_type.rb:166: warning: previous definition of XLS was here
+I, [2015-06-10T20:19:26.225543 #28762]  INFO -- : unlinking existing socket=/home/pranavn/cuexcel/tmp/sockets/unicorn.sock
+I, [2015-06-10T20:19:26.225692 #28762]  INFO -- : listening on addr=/home/pranavn/cuexcel/tmp/sockets/unicorn.sock fd=11
+I, [2015-06-10T20:19:26.225923 #28762]  INFO -- : listening on addr=0.0.0.0:3000 fd=12
+I, [2015-06-10T20:19:26.597306 #28766]  INFO -- : worker=0 ready
+I, [2015-06-10T20:19:26.600816 #28769]  INFO -- : worker=1 ready
+I, [2015-06-10T20:19:26.602432 #28772]  INFO -- : worker=2 ready
+I, [2015-06-10T20:19:26.603707 #28762]  INFO -- : master process ready
+I, [2015-06-10T20:19:26.604067 #28775]  INFO -- : worker=3 ready
+I, [2015-06-10T20:19:26.606392 #28778]  INFO -- : worker=4 ready

@@ -6447,3 +6447,225 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-10 14:44:58
 
 
 Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-10 14:44:58 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:15:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (141.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (137.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:15:47 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 4721ms (Views: 4360.5ms | ActiveRecord: 105.3ms)
+Completed 200 OK in 621ms (Views: 610.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:15:51 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 72ms (Views: 62.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:15:52 +0530
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-10 20:15:52 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 20:15:52 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-10 20:15:53 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:15:53 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 20:15:53 +0530
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-10 20:15:53 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:15:54 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:15:54 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+
+
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:02 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:03 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 70ms (Views: 60.3ms | ActiveRecord: 1.1ms)
+
+
+
+
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:05 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+
+
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-10 20:16:39 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:18:06 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 1066ms (Views: 797.7ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-10 20:18:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 20:19:34 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 674ms (Views: 591.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-10 20:19:35 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
